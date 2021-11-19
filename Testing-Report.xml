@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Test-Suite name="UiPath Project - Test Automation" total="1" passed="1" failures="0" execution-date="11/19/2021 10:49:48" total-time="00:00:47">
+  <Result>
+    <TestScenario>GuruBankTest</TestScenario>
+    <TestName>Diagramadeflujo</TestName>
+    <Started>11/19/2021 10:49:01</Started>
+    <Ended>11/19/2021 10:49:48</Ended>
+    <Status>PASSED</Status>
+  </Result>
+</Test-Suite>

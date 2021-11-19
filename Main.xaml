@@ -1,0 +1,174 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Validation" Type="OutArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1208,1916</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GuruBank" sap:VirtualizedContainerService.HintSize="476,1851" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Id" />
+      <Variable x:TypeArguments="x:String" Name="Deposito" />
+      <Variable x:TypeArguments="x:String" Name="JsonTextResult" />
+      <Variable x:TypeArguments="njl:JObject" Name="JsonObject" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invocar archivo de flujo de trabajo" sap:VirtualizedContainerService.HintSize="434,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="CalculadoraRest.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <OutArgument x:TypeArguments="x:String" x:Key="JsonTextResult">[JsonTextResult]</OutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="BodyRequest">["{"&amp;"""expr"""&amp;":"&amp;"""105*500"""&amp;","&amp;"""precision"""&amp;": 14}"]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[JsonTextResult]" />
+    <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserializar JSON" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[JsonObject]" JsonString="[JsonTextResult]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[JsonObject(&quot;result&quot;).ToString]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Navegador Chrome: Guru99 Bank Home Page" sap:VirtualizedContainerService.HintSize="434,1259" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="68c1674d-3087-4201-880d-1a2a63267cb0" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="376,1003" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invocar archivo de flujo de trabajo" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="LoginGuruBank.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uix:NClick ClickType="Single" DisplayName="Clic 'New Customer'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68c1674d-3087-4201-880d-1a2a63267cb0" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://demo.guru99.com/V4/manager/Managerhomepage.php" DesignTimeRectangle="28, 409, 200, 37" ElementType="Text" FriendlyName="'New Customer'" FullSelectorArgument="&lt;webctrl aaname='New Customer' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='New Customer' tag='A' type='' check:text='New Customer' /&gt;" Guid="97da3fa9-d99b-4f34-b348-1422defd6969" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMwAAAApCAYAAAB5q8bDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALnSURBVHhe7Z3NcdswEEbTEytJIVIrHJ3TBF2JRx3o6hkXkBuDf+4CEKWl6Ehx3pvBRBQIYkl9D6BP+TEnfv/6SaN9u7Y3RZjL5UKjfbu2N0UYALgNwgAYQBgAAwgDYABhAAwgDIABhAEwgDAABhAGwADCABhAGAADCANgAGEADGwQ5nOeDsM8HCb3qeJ9nIdhnM/p8GtJdQxLO741FW3kPI/DcZ4+0iFAYrswvYD+LWE+pvnYzO9D7uo67TE7wkCfzcKMJy9HFapGmGoXKLtS/F4G/vPtWO1aPrQ9+dqxhSBSrikKNL6HnkA9x/kkaitzJfFSW8br75vanajyen5c+D6PqURWfeo5xvuecn9vJ4ensV0YF4gQEPmDKmHaYIfzU3ByyCJZLCGIv1Zvt1BSrLEujPzs0cd+bB1ieS/6OIc/z5WPS/1VzfXc+rnFa3fvHZ7OQ8I0QZI/vP8sQxEQQQwhkiEZ3a61hM7LJcNeUOFaI9Z2rzAaUaeje66oo+lvpK6fmeyL+PuNz7GtG16HB4VxhOCkANQh8itl03JYRHD8OLei+jFLaK5IsZMwuV/XlBG1+SOxMxaE8H1hZI3imYW+PK9uCPP6PC6Mo7yara26HfKqWkTxYfJj/L/XXklC4OqA97glTCbeTwxtDvlXC7NWP8K8MrsIk3/k48EFJwflnp0g7CyTu14OkL9O/IP3emDi/HE1rpFha4O3LnE9dgl1d9za4rAmTKcuza1+eCY7CeMIAZKrdDxPrcy1RCFYnTEqbB3SOC1NDNoS3Hp+3d+EXNWmhcljl/n0sU2YdL7qj9e7Tyh4JvsJ4wivLp0gLO/ptQitVN3VvEt97c6uU4T0zc3tpaiFKv36NSneSytJPl/OZRXGk6+f29KHMK/MBmEA/l8QBsAAwgAYQBgAAwgDYABhAAwgDIABhAEwgDAABhAGwADCABhAGAADCANgoAjT+w81abR/ve0NOwyAAYQBuJt5/gN65J5laeSXQQAAAABJRU5ErkJggg==" InformativeScreenshot="0524888e4a49e0dee7aa9e3cf9fd5af7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Guru99 Bank Manager HomePage' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invocar archivo de flujo de trabajo" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="NewCustomer.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <OutArgument x:TypeArguments="x:String" x:Key="CustomerID">[Id]</OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Deposito]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[JsonObject("result").ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NClick ClickType="Single" DisplayName="Clic 'New Account'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="68c1674d-3087-4201-880d-1a2a63267cb0" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://demo.guru99.com/V4/manager/Managerhomepage.php" DesignTimeRectangle="28, 520, 200, 37" ElementType="Text" FriendlyName="'New Account'" FullSelectorArgument="&lt;webctrl aaname='New Account' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='New Account' tag='A' type='' check:text='New Account' /&gt;" Guid="6055be39-ac78-4e08-bdbe-3a2bdd2c9f90" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMwAAAApCAYAAAB5q8bDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKESURBVHhe7Z1djoIwFEZnT6xLtkLcCa7EuANfTdxDpz+0XNqiXkQjek7SzMCltDrf4erT/BkAeJgkzPl8ZjC+bqwNHQZAAcIAKEAYAAUIA6AAYQAUIAyAAoQBUIAwAAoQBkABwgAoQBgABQgDoABhABQsEOZq+l1jml1vf8s4dqZpOnMaDl+KX6sx7aHYxYdyMl3Tmv4yHMImWS5MLaxvEybsodu/UdCnQZhvYLEwIaxZAAphRrn8SF0pnJfCXQ9t1rVcwGZkuPSm9TV3jd3LcTgv8PeL62b7vFWLnatWO+3tub3Ykd9HvGYQ4iDnx/2Hfcbztf3CNlgujP2j+wDJkE+EKaWQgfOhTeGLYglB3L1kOAVybhFiRy6uPL5bE5Jkx/eFke/H8JrS9YNQQkDYHk8JE0OSpMjDV3zPEaFJXSKe72zXGp++Lpz1J3FYM9UmoXWUoo7oa1KSR4SRe552TfHaYbM8KYxFPoWFMNOPPXLIgIl5NohuTghsEEhEc6QQMQ96GdwRfe1mN0OYn+N5YSw+SC4YuTBFh5ni5rmgJ1FcAN0c91MGMxHWrosouxXCwGtYRZgYlnZnAxKDK+SZxXeW3t5Phq6zX5zbeqgnARX483FPeceR6GtSEoSBlYSxeEHkkz5cNwlYLtEQ9GLOjGi3utYkzNV1hrDerYlQZ8d+fTHXr5nqCPMLrCeMJQRIhj2EqPzYFCmlmpci3KveHSzVcI9rF0GeqYX7xFoe8Ch0nCcluCdMfH9uvAb4eBYIA/C7IAyAAoQBUIAwAAoQBkABwgAoQBgABQgDoABhABQgDIAChAFQgDAAChAGQEESpvYPNRmMrY+1ocMAKEAYgIcx5h8or6jaYvp8SwAAAABJRU5ErkJggg==" InformativeScreenshot="33503ee11f7114d22040998f18bffdf1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Guru99 Bank Manager HomePage' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invocar archivo de flujo de trabajo" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="NewAccount.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="CustomerID">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Id" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Deposit">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Deposito" />
+                </InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="TxtValidation">
+                  <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="Validation" />
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="06bb188d9b59fc81ea3841f634029ccf.png" Selector="&lt;html app='chrome.exe' title='Guru99 Bank Home Page'/&gt;" Url="http://demo.guru99.com/V4/index.php" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
